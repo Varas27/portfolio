@@ -1,0 +1,58 @@
+header {
+    background: transparent;
+    transition: background .5s ease-in-out;;
+}
+
+.navbar {
+    border-bottom: 1px solid #B2B2B2;
+    padding: 1em 0.6em;
+    transition: padding .3s, border-bottom 3s;
+}
+
+.navbar-brand, .nav-link {
+    color:#e8e8e8d5;
+    transition: color .2s ease-in;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: #fff;
+}
+
+.scrolling-active {
+    color: #fff;
+    box-shadow: 0 3px 1rem rgba(0,0,0, .3);
+    background: #FA528F;
+}
+
+.scrolling-active .navbar {
+    padding: 0.7em 0.6em;
+    border-bottom: none;
+}
+
+.bg-image{
+    position: relative;
+    background: url("https://images4.alphacoders.com/114/thumb-1920-1145705.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.bg-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 35%);
+  }
+
+.bg-image .mask{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color:#fff;
+    background-color: rgba(0, 0, 0, 0.7)
+}

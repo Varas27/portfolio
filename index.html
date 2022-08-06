@@ -7,14 +7,18 @@
     <title>Ramiro Varas Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js"
+        integrity="sha512-XFd1m0eHgU1F05yOmuzEklFHtiacLVbtdBufAyZwFR0zfcq7vc6iJuxerGPyVFOXlPGgM8Uhem9gwzMI8SJ5uw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-    <header>
+    <header class="fixed-top">
         <div class="container">
             <div class="row">
-                <nav class="navbar navbar-expand-md bg-dark">
-                    <h1><a class="navbar-brand" href="#">Ramiro Varas</a></h1>
+                <nav class="navbar navbar-expand-md">
+                    <h1 class="d-flex m-0 p-2"><a class="navbar-brand" href="#">Ramiro Varas</a></h1>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -28,6 +32,9 @@
                                 <a class="nav-link" href="#proyects">Proyectos</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="#education">Formación</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="#contact">Contacto</a>
                             </li>
                         </ul>
@@ -36,26 +43,31 @@
             </div>
         </div>
     </header>
+
+
     <!-- PORTADA -->
-    <div class="container">
-        <div class="row">
-            <div class="d-flex justify-content-center align-items-center"
-                style="height:100vh; width:100%; background: violet;">
+
+    <div class="bg-image">
+        <div class="mask">
+            <div class="h-100 d-flex align-items-center justify-content-center m-0">
                 <div>
-                    <p>Soy Ramiro Varas</p>
-                    <p>Bienvenido a mi portfolio :)</p>
+                    <p class="h1 text-center">Soy Ramiro Varas</p>
+                    <p class="h2 text-center">Desarrollador Full Stack</p>
+                    <hr className="my-4" style='border-color: #EFEFEF'  />
+                    <p class="h2">Bienvenido/a a mi portfolio :)</p>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- PORTADA -->
     <section id="about-me">
         <div class="container">
+            <h2 class="text-center">Sobre Mi</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <h2>Sobre Mi</h2>
                     <div>
-                        <h3>Desarrollador Full Stack</h3>
+                        <h3 class="text-center">Desarrollador Full Stack</h3>
                         <p>Estoy enfocado en el desarrollo web Full Stack, especializado en el stack MERN.<br />Me
                             considero bueno generando soluciones a problemas específicos y encuentro interesante saber
                             qué hay detrás de un sitio web.</p>
@@ -63,7 +75,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h2>Skills</h2>
+                    <h3 class="text-center">Skills</h3>
                     <div class="row">
                         <div class="col-3" style="height:100px; background:blue"></div>
                         <div class="col-3" style="height:100px; background:red"></div>
@@ -80,7 +92,17 @@
     </section>
     <section id="proyects">
         <div class="container">
-            <h2>Proyectos</h2>
+            <h2 class="text-center">Proyectos</h2>
+            <div class="row">
+                <div class="proyect-card col" style="height:300px; width:100%; background:blue"></div>
+                <div class="proyect-card col" style="height:300px; width:100%; background:gold"></div>
+                <div class="proyect-card col" style="height:300px; width:100%; background:blue"></div>
+            </div>
+        </div>
+    </section>
+    <section id="education">
+        <div class="container">
+            <h2 class="text-center">Formación</h2>
             <div class="row">
                 <div class="proyect-card col" style="height:300px; width:100%; background:blue"></div>
                 <div class="proyect-card col" style="height:300px; width:100%; background:gold"></div>
@@ -90,7 +112,7 @@
     </section>
     <section id="contact">
         <div class="container">
-            <h2>Contacto</h2>
+            <h2 class="text-center">Contacto</h2>
             <div class="row">
                 <p>LINKEDIN, GITHUB, EMAIL</p>
             </div>
@@ -103,6 +125,13 @@
             </div>
         </div>
     </footer>
+    <script>
+        window.addEventListener('scroll', () => {
+            let header = document.querySelector('header');
+            header.classList.toggle('scrolling-active', window.scrollY > 0);
+        })
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
