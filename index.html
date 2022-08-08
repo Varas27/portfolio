@@ -7,7 +7,9 @@
     <title>Ramiro Varas Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.css">
+    <link rel="stylesheet" href="./styles/styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js"
         integrity="sha512-XFd1m0eHgU1F05yOmuzEklFHtiacLVbtdBufAyZwFR0zfcq7vc6iJuxerGPyVFOXlPGgM8Uhem9gwzMI8SJ5uw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -43,48 +45,45 @@
             </div>
         </div>
     </header>
-
-
-    <!-- PORTADA -->
-
     <div class="bg-image">
         <div class="mask">
             <div class="h-100 d-flex align-items-center justify-content-center m-0">
                 <div>
-                    <p class="h1 text-center">Soy Ramiro Varas</p>
-                    <p class="h2 text-center">Desarrollador Full Stack</p>
-                    <hr className="my-4" style='border-color: #EFEFEF'  />
-                    <p class="h2">Bienvenido/a a mi portfolio :)</p>
+                    <p class="h2 text-center m-0">Desarrollador Full Stack</p>
+                    <hr class="my-4" style='border-color: #EFEFEF' />
+                    <p class="h2 text-center m-0">Bienvenido/a a mi portfolio :)</p>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- PORTADA -->
     <section id="about-me">
         <div class="container">
-            <h2 class="text-center">Sobre Mi</h2>
+            <div class="row align-items-center">
+                <hr class="my-4 col" style='border-color: #EFEFEF' />
+                <h2 class="text-center col w-100 my-5">Sobre Mi</h2>
+                <hr class="my-4 col" style='border-color: #EFEFEF' />
+            </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div>
-                        <h3 class="text-center">Desarrollador Full Stack</h3>
+                        <h3 class="text-center my-2">Desarrollador Full Stack</h3>
                         <p>Estoy enfocado en el desarrollo web Full Stack, especializado en el stack MERN.<br />Me
                             considero bueno generando soluciones a problemas específicos y encuentro interesante saber
                             qué hay detrás de un sitio web.</p>
                         <p class="mb-0">La comunicación es posible tanto en español como en inglés.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <h3 class="text-center">Skills</h3>
-                    <div class="row">
-                        <div class="col-3" style="height:100px; background:blue"></div>
-                        <div class="col-3" style="height:100px; background:red"></div>
-                        <div class="col-3" style="height:100px; background:yellow"></div>
-                        <div class="col-3" style="height:100px; background:green"></div>
-                        <div class="col-3" style="height:100px; background:gray"></div>
-                        <div class="col-3" style="height:100px; background:black"></div>
-                        <div class="col-3" style="height:100px; background:yellowgreen"></div>
-                        <div class="col-3" style="height:100px; background:cadetblue"></div>
+                <div class="col-lg-6">
+                    <h3 class="text-center my-2">Skills</h3>
+                    <div class="slider responsive">
+                        <div style="height:100px; width: 100px; background:blue"></div>
+                        <div style="height:100px; width: 100px; background:red"></div>
+                        <div style="height:100px; width: 100px; background:yellow"></div>
+                        <div style="height:100px; width: 100px; background:green"></div>
+                        <div style="height:100px; width: 100px; background:gray"></div>
+                        <div style="height:100px; width: 100px; background:black"></div>
+                        <div style="height:100px; width: 100px; background:yellowgreen"></div>
+                        <div style="height:100px; width: 100px; background:cadetblue"></div>
                     </div>
                 </div>
             </div>
@@ -92,17 +91,56 @@
     </section>
     <section id="proyects">
         <div class="container">
-            <h2 class="text-center">Proyectos</h2>
+            <h2 class="text-center my-5">Proyectos</h2>
             <div class="row">
-                <div class="proyect-card col" style="height:300px; width:100%; background:blue"></div>
-                <div class="proyect-card col" style="height:300px; width:100%; background:gold"></div>
-                <div class="proyect-card col" style="height:300px; width:100%; background:blue"></div>
+                <div class="col-xl-4 my-2">
+                    <div class="card-project">
+                        <img class="img-fluid" src="./images/nebea2.jpg"
+                            alt="sample87" />
+                        <div class="content-project">
+                            <h3 class="h5 col-10 text-center">Ecommerce</h3>
+                            <p class="mt-1 mb-2 mt-sm-2 mb-sm-4">React.js + Firebase</p>
+                            <div class="col-10 text-center">
+                                <a class="btn btn-primary card-btn col-12 col-sm-5 mb-2 mb-sm-0 mx-sm-2" href="https://my-store-varas27.vercel.app/" target="_blank">Ver demo</a>
+                                <a class="btn btn-primary card-btn col-12 col-sm-5" href="https://github.com/Varas27/react-store" target="_blank">Ver código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 my-2">
+                    <div class="card-project ">
+                        <img class="img-fluid" src="https://images4.alphacoders.com/114/thumb-1920-1145705.jpg"
+                            alt="sample87" />
+                        <div class="content-project">
+                            <h3 class="h5 col-10 text-center m-0">One Page</h3>
+                            <p class="mt-1 mb-2 mt-sm-2 mb-sm-4">HTML5 + CSS + Bootstrap + jQuery</p>
+                            <div class="col-10 text-center">
+                                <a class="btn btn-primary card-btn col-12 col-sm-5 mb-2 mb-sm-0 mx-sm-2" href="https://varas27.github.io/ecobici-onepage" target="_blank">Ver demo</a>
+                                <a class="btn btn-primary card-btn col-12 col-sm-5" href="https://github.com/Varas27/ecobici-onepage" target="_blank">Ver código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 my-2">
+                    <div class="card-project">
+                        <img class="img-fluid" src="https://images4.alphacoders.com/114/thumb-1920-1145705.jpg"
+                            alt="sample87" />
+                        <div class="content-project">
+                            <h3 class="h5 col-10 text-center">Ecommerce + Login</h3>
+                            <p class="mt-1 mb-2 mt-sm-2 mb-sm-4">Node.js + Express.js + MongoDB</p>
+                            <div class="col-10 text-center">
+                                <a class="btn btn-primary card-btn col-12 col-sm-5 mb-2 mb-sm-0 mx-sm-2" href="https://clase-48-varas.herokuapp.com/" target="_blank">Ver demo</a>
+                                <a class="btn btn-primary card-btn col-12 col-sm-5" href="https://github.com/Varas27/clase-48" target="_blank">Ver código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section id="education">
         <div class="container">
-            <h2 class="text-center">Formación</h2>
+            <h2 class="text-center my-5">Formación</h2>
             <div class="row">
                 <div class="proyect-card col" style="height:300px; width:100%; background:blue"></div>
                 <div class="proyect-card col" style="height:300px; width:100%; background:gold"></div>
@@ -118,8 +156,8 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container bg-dark">
+    <footer class=" bg-dark">
+        <div class="container">
             <div class="row">
                 <p class="text-center text-white my-3">Portfolio made by</p>
             </div>
@@ -135,6 +173,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.js"></script>
+    <script>
+        $('.slider').slick({
+            autoplay: true,
+            infinite: true,
+            dots: false,
+            arrows: false,
+            pauseOnHover: true,
+            autoplaySpeed: 2000,
+            speed: 300,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                    },
+                }
+            ]
+        });
+    </script>
 </body>
 
 </html>
