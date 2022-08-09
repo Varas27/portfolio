@@ -1,12 +1,11 @@
 header {
     background: transparent;
     transition: background .5s ease-in-out;
-    ;
 }
 
 .navbar {
     border-bottom: 1px solid #e8e8e8d5;
-    padding: 1em 0.6em;
+    padding: 1rem 0.6rem;
     transition: padding .3s, border-bottom 3s;
 }
 
@@ -40,7 +39,7 @@ header {
 }
 
 .scrolling-active .navbar {
-    padding: 0.7em 0.6em;
+    padding: 0.7rem 0.6rem;
     border-bottom: none;
 }
 
@@ -70,6 +69,10 @@ header {
     left: 0;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+.about-me-header {
+    padding-top: 5.5rem;
 }
 
 .card-project {
@@ -143,20 +146,23 @@ header {
     opacity: 1;
 }
 
-.card-btn {
+.button,
+.button:focus {
     border-radius: 25px;
     font-weight: 600;
     background: transparent;
     border-color: #fff;
     color: #fff;
+    transition: all .25s;
 }
 
-.card-btn:hover, .card-btn:focus {
+.button:hover {
     color: #000;
     background: #fff;
     border-color: white;
 }
 
-.card-btn:active, .card-btn:focus {
+.button:active,
+.button:focus {
     box-shadow: none !important;
 }

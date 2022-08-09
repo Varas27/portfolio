@@ -7,6 +7,7 @@
     <title>Ramiro Varas Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.css">
     <link rel="stylesheet" href="./styles/styles.css" />
@@ -16,71 +17,57 @@
     <header class="fixed-top">
         <div class="container">
             <div class="row">
-                <nav class="navbar navbar-expand-md">
-                    <h1 class="d-flex m-0 p-2"><a class="navbar-brand" href="#">Ramiro Varas</a></h1>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#about-me">Sobre Mi</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#proyects">Proyectos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#education">Formación</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
+                <nav class="navbar navbar-expand-md justify-content-center">
+                    <h1 class="d-flex m-0 p-2"><a class="navbar-brand m-0" href="#scrollToTop" data-anchor="true"
+                            data-time="400">Ramiro Varas</a></h1>
                 </nav>
             </div>
         </div>
     </header>
-    <div class="bg-image">
+    <div id="scrollToTop" class="bg-image">
         <div class="mask">
             <div class="h-100 d-flex align-items-center justify-content-center m-0">
                 <div>
                     <p class="h2 text-center m-0">Desarrollador Full Stack</p>
                     <hr class="my-4" style='border-color: #EFEFEF' />
-                    <p class="h2 text-center m-0">Bienvenido/a a mi portfolio :)</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="#about-me" class="d-flex align-items-center justify-content-between btn btn-primary button py-2 px-5"
+                            data-anchor="true" data-time="400">
+                            <p class="mb-0">Ver mi trabajo</p>
+                            <span class="mx-1"></span>
+                            <i class="fa fa-arrow-down"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <section id="about-me">
         <div class="container">
-            <div class="row align-items-center">
-                <hr class="my-4 col" style='border-color: #EFEFEF' />
-                <h2 class="text-center col w-100 my-5">Sobre Mi</h2>
-                <hr class="my-4 col" style='border-color: #EFEFEF' />
-            </div>
+            <h2 class="text-center col w-100 mb-2 about-me-header">Sobre Mi</h2>
             <div class="row">
                 <div class="col-lg-6">
                     <div>
-                        <h3 class="text-center my-2">Desarrollador Full Stack</h3>
-                        <p>Estoy enfocado en el desarrollo web Full Stack, especializado en el stack MERN.<br />Me
-                            considero bueno generando soluciones a problemas específicos y encuentro interesante saber
-                            qué hay detrás de un sitio web.</p>
+                        <h3 class="text-center my-3">Desarrollador Full Stack</h3>
+                        <p class=" mt-4">Enfocado en el desarrollo web Full Stack, especializado en el stack MERN.<br />
+                            Estoy capacitado para generar soluciones a problemas específicos y encuentro interesante
+                            todo lo que hay detrás de un sitio web.</p>
                         <p class="mb-0">La comunicación es posible tanto en español como en inglés.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h3 class="text-center my-2">Skills</h3>
-                    <div class="slider responsive">
-                        <div style="height:100px; width: 100px; background:blue"></div>
-                        <div style="height:100px; width: 100px; background:red"></div>
-                        <div style="height:100px; width: 100px; background:yellow"></div>
-                        <div style="height:100px; width: 100px; background:green"></div>
-                        <div style="height:100px; width: 100px; background:gray"></div>
-                        <div style="height:100px; width: 100px; background:black"></div>
-                        <div style="height:100px; width: 100px; background:yellowgreen"></div>
-                        <div style="height:100px; width: 100px; background:cadetblue"></div>
+                    <h3 class="text-center my-3">Skills</h3>
+                    <div class="slider responsive mb-0 mt-4">
+                        <div><img src="./images/js.png" alt="javascript logo" class="img-fluid mx-auto"></div>
+                        <div><img src="./images/reactjs.png" alt="react.js logo" class="img-fluid mx-auto"></div>
+                        <div><img src="./images/nodejs.png" alt="node.js logo" class="img-fluid mx-auto"></div>
+                        <div><img src="./images/mongodb.png" alt="mongodb logo" class="img-fluid mx-auto"></div>
+                        <div><img src="./images/html5.png" alt="html5 logo" class="img-fluid mx-auto"></div>
+                        <div><img src="./images/css3.png" alt="css logo" class="img-fluid mx-auto"></div>
+                        <div><img src="./images/bootstrap.png" alt="bootstrap logo" class="img-fluid mx-auto"></div>
+                        <div><img src="./images/sql.png" alt="sql logo" class="img-fluid mx-auto"></div>
+                        <div><img src="./images/jquery.png" alt="jquery logo" class="img-fluid mx-auto"></div>
+                        <div><img src="./images/git.png" alt="git logo" class="img-fluid mx-auto"></div>
                     </div>
                 </div>
             </div>
@@ -90,21 +77,22 @@
         <div class="container">
             <h2 class="text-center my-5">Proyectos</h2>
             <div class="row">
-                <div class="col-xl-4 my-2">
+                <div class="col-lg-10 col-xl-4 mb-3 mb-xl-2 mx-auto">
                     <div class="card-project">
-                        <img class="img-fluid" src="./images/nebea2.jpg"
-                            alt="sample87" />
+                        <img class="img-fluid" src="./images/nebea2.jpg" alt="sample87" />
                         <div class="content-project">
-                            <h3 class="h5 col-10 text-center">Ecommerce</h3>
+                            <h3 class="h5 col-10 text-center m-0">Ecommerce</h3>
                             <p class="mt-1 mb-2 mt-sm-2 mb-sm-4">React.js + Firebase</p>
                             <div class="col-10 text-center">
-                                <a class="btn btn-primary card-btn col-12 col-sm-5 mb-2 mb-sm-0 mx-sm-2" href="https://my-store-varas27.vercel.app/" target="_blank">Ver demo</a>
-                                <a class="btn btn-primary card-btn col-12 col-sm-5" href="https://github.com/Varas27/react-store" target="_blank">Ver código</a>
+                                <a class="btn btn-primary button col-12 col-sm-5 mb-2 mb-sm-0 mx-sm-2"
+                                    href="https://my-store-varas27.vercel.app/" target="_blank">Ver demo</a>
+                                <a class="btn btn-primary button col-12 col-sm-5"
+                                    href="https://github.com/Varas27/react-store" target="_blank">Ver código</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 my-2">
+                <div class="col-lg-10 col-xl-4 my-3 my-xl-2 mx-auto">
                     <div class="card-project ">
                         <img class="img-fluid" src="https://images4.alphacoders.com/114/thumb-1920-1145705.jpg"
                             alt="sample87" />
@@ -112,36 +100,30 @@
                             <h3 class="h5 col-10 text-center m-0">One Page</h3>
                             <p class="mt-1 mb-2 mt-sm-2 mb-sm-4">HTML5 + CSS + Bootstrap + jQuery</p>
                             <div class="col-10 text-center">
-                                <a class="btn btn-primary card-btn col-12 col-sm-5 mb-2 mb-sm-0 mx-sm-2" href="https://varas27.github.io/ecobici-onepage" target="_blank">Ver demo</a>
-                                <a class="btn btn-primary card-btn col-12 col-sm-5" href="https://github.com/Varas27/ecobici-onepage" target="_blank">Ver código</a>
+                                <a class="btn btn-primary button col-12 col-sm-5 mb-2 mb-sm-0 mx-sm-2"
+                                    href="https://varas27.github.io/ecobici-onepage" target="_blank">Ver demo</a>
+                                <a class="btn btn-primary button col-12 col-sm-5"
+                                    href="https://github.com/Varas27/ecobici-onepage" target="_blank">Ver código</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 my-2">
+                <div class="col-lg-10 col-xl-4 mt-3 mt-xl-2 mx-auto">
                     <div class="card-project">
                         <img class="img-fluid" src="https://images4.alphacoders.com/114/thumb-1920-1145705.jpg"
                             alt="sample87" />
                         <div class="content-project">
-                            <h3 class="h5 col-10 text-center">Ecommerce + Login</h3>
+                            <h3 class="h5 col-10 text-center m-0">Ecommerce + Login</h3>
                             <p class="mt-1 mb-2 mt-sm-2 mb-sm-4">Node.js + Express.js + MongoDB</p>
                             <div class="col-10 text-center">
-                                <a class="btn btn-primary card-btn col-12 col-sm-5 mb-2 mb-sm-0 mx-sm-2" href="https://clase-48-varas.herokuapp.com/" target="_blank">Ver demo</a>
-                                <a class="btn btn-primary card-btn col-12 col-sm-5" href="https://github.com/Varas27/clase-48" target="_blank">Ver código</a>
+                                <a class="btn btn-primary button col-12 col-sm-5 mb-2 mb-sm-0 mx-sm-2"
+                                    href="https://clase-48-varas.herokuapp.com/" target="_blank">Ver demo</a>
+                                <a class="btn btn-primary button col-12 col-sm-5"
+                                    href="https://github.com/Varas27/clase-48" target="_blank">Ver código</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="education">
-        <div class="container">
-            <h2 class="text-center my-5">Formación</h2>
-            <div class="row">
-                <div class="proyect-card col" style="height:300px; width:100%; background:blue"></div>
-                <div class="proyect-card col" style="height:300px; width:100%; background:gold"></div>
-                <div class="proyect-card col" style="height:300px; width:100%; background:blue"></div>
             </div>
         </div>
     </section>
@@ -180,19 +162,34 @@
             pauseOnHover: true,
             autoplaySpeed: 2000,
             speed: 300,
-            slidesToShow: 5,
-            slidesToScroll: 5,
+            slidesToShow: 6,
+            slidesToScroll: 6,
             responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 5,
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 6,
+                    }
+                },
                 {
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 4,
                         slidesToScroll: 4,
-                    },
+                    }
                 }
             ]
         });
     </script>
+    <script src="./scripts/scroll.js"></script>
 </body>
 
 </html>
