@@ -1,23 +1,26 @@
+body {
+    background: #000;
+    color: #d1cdc7;
+}
+
 header {
     background: transparent;
     transition: background .5s ease-in-out;
 }
 
-.navbar {
+nav {
     border-bottom: 1px solid #e8e8e8d5;
     padding: 1rem 0.6rem;
     transition: padding .3s, border-bottom 3s;
 }
 
-.navbar-brand,
-.nav-link {
+.navbar-brand {
     color: #e8e8e8d5;
     transition: color .2s, transform .1s;
     font-weight: 500;
 
 }
 
-.nav-link:hover,
 .navbar-brand:hover {
     color: #fff;
     transform: scale(1.04);
@@ -28,17 +31,15 @@ header {
     background: #ffffffe7;
 }
 
-.scrolling-active .nav-link,
 .scrolling-active .navbar-brand {
     color: #535353;
 }
 
-.scrolling-active .nav-link:hover,
 .scrolling-active .navbar-brand:hover {
     color: #000000;
 }
 
-.scrolling-active .navbar {
+.scrolling-active nav {
     padding: 0.7rem 0.6rem;
     border-bottom: none;
 }
@@ -165,4 +166,76 @@ header {
 .button:active,
 .button:focus {
     box-shadow: none !important;
+}
+
+.social-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.social-button::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+.social-button:hover {
+    color: #fff;
+}
+
+.social-button:hover::after {
+    width:100%;
+    height:100%;
+    margin-left: -50%;
+}
+
+.social-button i {
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.social-button i {
+    font-size: 35px;
+}
+
+.social-button--mail {
+    color: #EE483B
+}
+
+.social-button--mail::after {
+    background: #EE483B;
+}
+
+.social-button--linkedin {
+    color: #0077b5;
+}
+
+.social-button--linkedin::after {
+    background: #0077b5;
+}
+
+.social-button--github {
+    color: #6e5494;
+}
+
+.social-button--github::after {
+    background: #6e5494;
+}
+
+footer {
+    background: #ffffffe7;
+    color: #000;
+    font-size: 1.05rem;
 }
