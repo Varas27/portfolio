@@ -1,0 +1,27 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 350" width="150" height="150">
+	<title>firebase-svg</title>
+	<style>
+		.s0 { fill: #ffc24a } 
+		.s1 { fill: #ffa712 } 
+		.s2 { fill: #f4bd62 } 
+		.s3 { fill: #ffa50e } 
+		.s4 { fill: #f6820c } 
+		.s5 { fill: #fde068 } 
+		.s6 { fill: #fcca3f } 
+		.s7 { fill: #eeab37 } 
+	</style>
+	<g id="Layer">
+		<path id="Layer" class="s0" d="m90.1 7c1.2-7.8 11.7-9.6 15.4-2.6l44.2 83.1-0.2 2-100.4 190.5-2.1 3z"/>
+		<g id="Layer">
+			<path id="path-1" fill-rule="evenodd" class="s1" d="m90.9 8.2c1.2-7.7 10.5-9.5 14.2-2.6l44.1 83.5-99.3 188.5-1.6 3.1z"/>
+		</g>
+		<path id="Layer" class="s2" d="m149.4 90.1v-2.8l17.6-33.6c3.1-6 11.9-6 15 0l33 62.9-33 33.8z"/>
+		<g id="Layer">
+			<path id="path-3" fill-rule="evenodd" class="s3" d="m149.7 90.4l0.6-1.7 17.7-34.1c3-5.8 10.4-5.2 13.4 0.6l32.1 61-32.1 32.8z"/>
+		</g>
+		<path id="Layer" class="s4" d="m149.5 87.1l32.1 61.1-1.7 4.4-128.4 128-3.5 1.4-1 1z"/>
+		<path id="Layer" class="s5" d="m162.6 347.5l-115.6-64.5 208.7-209.1c4.6-4.6 12.5-2.1 13.5 4.3l33.2 204.5-116.3 64.9c-7.3 4-16.2 4-23.5-0.1z"/>
+		<path id="Layer" class="s6" d="m186 346.5c-7.3 4.1-16.1 4.1-23.4 0l-114.3-63.9 208-207.8c4.5-4.6 11.1-1.9 12.1 4.4l33 203z"/>
+		<path id="Layer" class="s7" d="m302.1 281l0.3 1.7-116.3 64.9c-7.3 4-16.2 4-23.5-0.1l-115.6-64.5 0.9-1 114.7 63.6c7.3 4.1 16.2 4.1 23.5 0z"/>
+	</g>
+</svg>
